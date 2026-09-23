@@ -1342,6 +1342,8 @@
                     switchMapFloor(currentArtwork.floor);
                     highlightRoomOnMap(currentArtwork.roomCode);
                 }
+                
+                let textToRead = currentArtwork.audioText.replace(/廣場/g, '廣 場');
 
                 const utterance = new SpeechSynthesisUtterance(currentArtwork.audioText);
                 utterance.lang = 'zh-TW';
