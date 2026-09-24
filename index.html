@@ -1284,7 +1284,7 @@
         function updatePlayerBarUI() {
             if (!currentArtwork) return;
             document.getElementById('player-thumb').src = currentArtwork.img;
-            document.getElementById('player-room').innerText = `${currentArtwork.roomCode} 點位`;
+            document.getElementById('player-room').innerText = currentArtwork.roomCode;
             document.getElementById('player-title').innerText = currentArtwork.title;
             document.getElementById('player-artist').innerText = currentArtwork.artist;
         }
